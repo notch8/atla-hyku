@@ -10,25 +10,18 @@
     </div>
 
     <div class="col-sm-6 right-side">
-
          <h2>Browse our partner repositories:</h2>
-         <div class="row home-logo-grid">
-             <div class="col-xs-6 col-sm-4">
-                  <%= link_to "//#{host_for('rim')}" do %>
-                         <%= image_tag("home-logos/rim_atla.png", class: "tenant-logo", alt: "RIM") %>
+           <div class="row home-logo-grid">
+                  <% @accounts.each_with_index do |account, i| %>
+                  <div class="col-xs-6 col-sm-4">
+                    <% if @images[i].present? && !@images[i].match(/placeholder/) %>
+                      <%= link_to "//#{account.cname}" do %>
+                        <%= image_tag @images[i], class: 'logo-image' %>
+                      <% end %>
+                    <% end %>
+                     </div>
                   <% end %>
-             </div>
-             <div class="col-xs-6 col-sm-4">
-                  <%= link_to "//#{host_for('ctschicago')}" do %>
-                    <%= image_tag("home-logos/ctschicago.png", class: "tenant-logo", alt: "CTS") %>
-                   <% end %>
-             </div>
-             <div class="col-xs-6 col-sm-4">
-                  <%= link_to "//#{host_for('ost')}" do %>
-                    <%= image_tag("home-logos/ost.png", class: "tenant-logo", alt: "OST") %>
-                  <% end %>
-             </div>
-          </div>
+           </div>
           <%= link_to "//#{host_for('shared-search')}/catalog" do %>
                <button class="shared-search">Search All Repositories</button>
           <% end %>
