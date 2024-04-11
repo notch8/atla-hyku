@@ -19,7 +19,9 @@ de:
         #level: Mit dem Dokument verbundener Bildungsstand.
         year: Das Jahr, in dem das Werk erstellt wurde. Dies muss eine vierstellige Jahreszahl sein und mit 19 oder 20 beginnen
       etd:
-        subject: Wählen Sie Überschriften oder Indexbegriffe, die beschreiben, worum es in der Arbeit geht, aus unserer <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>Themenliste</a> aus. Wenn Ihre Begriffe in der Liste fehlen, verwenden Sie <a href='https://fast.oclc.org/searchfast/'>FAST-Betreffüberschriften</a>. Für weitere Religions- und Theologiebegriffe, die unserer Liste hinzugefügt werden sollten, verwenden Sie <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>dieses Formular.</a>
+        title: 'Ein Name, der der Ressource gegeben wird. Verwenden Sie nicht ausschließlich Großbuchstaben, die Groß- und Kleinschreibung des Titels wird bevorzugt.'
+        subject: Wählen Sie Überschriften oder Indexbegriffe, die beschreiben, worum es in der Arbeit geht, aus unserer <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>Themenliste</a> aus. Wenn Ihre Begriffe in der Liste fehlen, verwenden Sie <a href='https://fast.oclc.org/searchfast/'>FAST-Betreffüberschriften</a>. Für weitere Religions- und Theologiebegriffe, die unserer Liste hinzugefügt werden sollten, verwenden Sie <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>dieses Formular.</a> Fügen Sie separate Begriffe in ein eigenes Feld ein – klicken Sie auf „Weitere hinzufügen“, um weitere Felder anzuzeigen.
+        keyword: "Wörter oder Ausdrücke, die Sie auswählen, um zu beschreiben, worum es in der Arbeit geht. Dabei muss es sich nicht unbedingt um einen kontrollierten Wortschatz handeln. Fügen Sie separate Begriffe in ein eigenes Feld ein – klicken Sie auf „Weitere hinzufügen“, um weitere Felder anzuzeigen."
     labels:
       defaults:
         bibliographic_citation: Bibliografische Angabe

@@ -19,7 +19,9 @@ fr:
         #level: Niveau d'études associé au document.
         year: L'année de création de l'œuvre. Il doit s'agir d'une année à 4 chiffres et commencer par 19 ou 20
       etd:
-        subject: Choisissez des titres ou des termes d'index décrivant le sujet du travail dans notre liste de <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>sujet</a>. Si vos termes ne figurent pas dans la liste, utilisez les <a href='https://fast.oclc.org/searchfast/'>titres de sujet FAST</a>. Pour des termes religieux et théologiques supplémentaires qui devraient être ajoutés à notre liste, utilisez <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>ce formulaire.</a>
+        title: Un nom donné à la ressource. N'utilisez pas de majuscules, la casse du titre est préférable.
+        subject: Choisissez des titres ou des termes d'index décrivant le sujet du travail dans notre liste de <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>sujet</a>. Si vos termes ne figurent pas dans la liste, utilisez les <a href='https://fast.oclc.org/searchfast/'>titres de sujet FAST</a>. Pour des termes religieux et théologiques supplémentaires qui devraient être ajoutés à notre liste, utilisez <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>ce formulaire.</a> Mettez des termes distincts dans leur propre champ - cliquez sur "Ajouter un autre" pour des champs supplémentaires.
+        keyword: "Mots ou expressions que vous sélectionnez pour décrire le sujet du travail. Il n’est pas nécessaire qu’il s’agisse d’un vocabulaire contrôlé. Mettez des termes distincts dans leur propre champ – cliquez sur « Ajouter un autre » pour des champs supplémentaires."
     labels:
       defaults:
         bibliographic_citation: Citation bibliographique
