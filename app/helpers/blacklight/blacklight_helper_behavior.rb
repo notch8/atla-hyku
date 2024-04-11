@@ -331,7 +331,9 @@ module Blacklight
     #
     # @param [String] format suffix
     # @yield
-    def with_format(format, *)
+    # rubocop:disable Lint/UnusedMethodArgument
+    def with_format(format, *, &block)
+      # rubocop:enable Lint/UnusedMethodArgument
       old_formats = formats
       self.formats = [format]
       yield
