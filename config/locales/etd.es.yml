@@ -19,7 +19,9 @@ es:
         #level: Nivel de estudios asociado al documento.
         year: El año en que se creó la obra. Debe ser un año de 4 dígitos y comenzar con 19 o 20
       etd:
-        subject: Elija encabezados o términos de índice que describan de qué trata el trabajo de nuestra lista de <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>tema</a>. Si sus términos no aparecen en la lista, use <a href='https://fast.oclc.org/searchfast/'>encabezados de asunto FAST</a>. Para términos adicionales de religión y teología que deben agregarse a nuestra lista, use <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>este formulario.</a>
+        title: 'Un nombre dado al recurso. No utilice mayúsculas, se prefiere el título en mayúsculas.'
+        subject: Elija encabezados o términos de índice que describan de qué trata el trabajo de nuestra lista de <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>tema</a>. Si sus términos no aparecen en la lista, use <a href='https://fast.oclc.org/searchfast/'>encabezados de asunto FAST</a>. Para términos adicionales de religión y teología que deben agregarse a nuestra lista, use <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>este formulario.</a> Coloque términos separados en su propio campo; haga clic en "Agregar otro" para ver campos adicionales.
+        keyword: "Palabras o frases que selecciones para describir de qué se trata el trabajo. No es necesario que sean un vocabulario controlado. Coloque términos separados en su propio campo; haga clic en 'Agregar otro' para ver campos adicionales."
     labels:
       defaults:
         bibliographic_citation: cita bibliografica

@@ -19,7 +19,9 @@ it:
         #level: Livello di istruzione associato al documento.
         year: L'anno in cui è stata creata l'opera. Deve essere un anno a 4 cifre e iniziare con 19 o 20
       etd:
-        subject: Scegli i titoli o i termini dell'indice che descrivono l'argomento dell'opera dal nostro elenco <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>oggetto</a>. Se i tuoi termini non sono presenti nell'elenco, utilizza le <a href='https://fast.oclc.org/searchfast/'>intestazioni oggetto FAST</a>. Per ulteriori termini di religione e teologia che dovrebbero essere aggiunti al nostro elenco, utilizza <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>questo modulo.</a>
+        title: Un nome assegnato alla risorsa. Non utilizzare tutto maiuscolo, è preferibile il titolo.
+        subject: "Scegli i titoli o i termini dell'indice che descrivono l'argomento dell'opera dal nostro elenco <a href='https://docs.google.com/spreadsheets/d/15Od1lx5AYsOsc63w3KX7a9nFt2TsAAH51cCdlVARuQ0/edit?usp=sharing'>oggetto</a>. Se i tuoi termini non sono presenti nell'elenco, utilizza le <a href='https://fast.oclc.org/searchfast/'>intestazioni oggetto FAST</a>. Per ulteriori termini di religione e teologia che dovrebbero essere aggiunti al nostro elenco, utilizza <a href='https://forms.gle/TGhEKCSyBwJjnCCc8'>questo modulo.</a> Inserisci termini separati nel proprio campo: fai clic su 'Aggiungi un altro' per campi aggiuntivi."
+        keyword: "Parole o frasi selezionate per descrivere l'argomento del lavoro. Non è necessario che questi siano un vocabolario controllato. Inserisci termini separati nel proprio campo: fai clic su 'Aggiungi un altro' per campi aggiuntivi."
     labels:
       defaults:
         bibliographic_citation: Citazione bibliografica
