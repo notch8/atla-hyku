@@ -54,14 +54,8 @@ ingress:
         - path: /
   annotations: {
     kubernetes.io/ingress.class: "nginx",
-    nginx.ingress.kubernetes.io/proxy-body-size: "0",
-    cert-manager.io/cluster-issuer: letsencrypt-production-dns
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
   }
-  tls:
-    - hosts:
-        - ir-staging.atla.com
-        - "*.ir-staging.atla.com"
-      secretName: atla-hyku-staging-tls
 
 extraEnvVars: &envVars
   - name: CONFDIR
