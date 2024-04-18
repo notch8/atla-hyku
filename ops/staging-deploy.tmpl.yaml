@@ -46,10 +46,10 @@ extraVolumeMounts: &volMounts
 ingress:
   enabled: true
   hosts:
-    - host: atla-hyku.notch8.cloud
+    - host: ir-staging.atla.com
       paths:
         - path: /
-    - host: "*.atla-hyku.notch8.cloud"
+    - host: "*.ir-staging.atla.com"
       paths:
         - path: /
   annotations: {
@@ -59,9 +59,9 @@ ingress:
   }
   tls:
     - hosts:
-        - atla-hyku.notch8.cloud
-        - "*.atla-hyku.notch8.cloud"
-      secretName: atla-hyku-staging-tls-2
+        - ir-staging.atla.com
+        - "*.ir-staging.atla.com"
+      secretName: atla-hyku-staging-tls
 
 extraEnvVars: &envVars
   - name: CONFDIR
@@ -88,20 +88,20 @@ extraEnvVars: &envVars
     value: "8080"
   - name: FCREPO_REST_PATH
     value: rest
-  - name: GOOGLE_ANALYTICS_ID
-    value: $GOOGLE_ANALYTICS_ID
-  - name: GOOGLE_OAUTH_APP_NAME
-    value: atla-hyku-staging
-  - name: GOOGLE_OAUTH_APP_VERSION
-    value: '1.0'
-  - name: GOOGLE_OAUTH_PRIVATE_KEY_SECRET
-    value: $GOOGLE_OAUTH_PRIVATE_KEY_SECRET
-  - name: GOOGLE_OAUTH_PRIVATE_KEY_PATH
-    value: prod-cred.p12
-  - name: GOOGLE_OAUTH_PRIVATE_KEY_VALUE
-    value: $GOOGLE_OAUTH_PRIVATE_KEY_VALUE
-  - name: GOOGLE_OAUTH_CLIENT_EMAIL
-    value: hyku-demo@hyku-demo.iam.gserviceaccount.com
+  # - name: GOOGLE_ANALYTICS_ID
+  #   value: $GOOGLE_ANALYTICS_ID
+  # - name: GOOGLE_OAUTH_APP_NAME
+  #   value: atla-hyku-staging
+  # - name: GOOGLE_OAUTH_APP_VERSION
+  #   value: '1.0'
+  # - name: GOOGLE_OAUTH_PRIVATE_KEY_SECRET
+  #   value: $GOOGLE_OAUTH_PRIVATE_KEY_SECRET
+  # - name: GOOGLE_OAUTH_PRIVATE_KEY_PATH
+  #   value: prod-cred.p12
+  # - name: GOOGLE_OAUTH_PRIVATE_KEY_VALUE
+  #   value: $GOOGLE_OAUTH_PRIVATE_KEY_VALUE
+  # - name: GOOGLE_OAUTH_CLIENT_EMAIL
+  #   value: hyku-demo@hyku-demo.iam.gserviceaccount.com
   - name: INITIAL_ADMIN_EMAIL
     value: admin@example.com
   - name: INITIAL_ADMIN_PASSWORD
@@ -139,19 +139,17 @@ extraEnvVars: &envVars
   - name: HYRAX_FITS_PATH
     value: /app/fits/fits.sh
   - name: HYKU_ADMIN_HOST
-    value: atla-hyku.notch8.cloud
+    value: ir-staging.atla.com
   - name: HYKU_ADMIN_ONLY_TENANT_CREATION
     value: "false"
   - name: HYKU_ALLOW_SIGNUP
     value: "false"
   - name: HYKU_DEFAULT_HOST
-    value: "%{tenant}.atla-hyku.notch8.cloud"
-  - name: HYKU_FILE_ACL
-    value: "false"
+    value: "%{tenant}.ir-staging.atla.com"
   - name: HYKU_MULTITENANT
     value: "true"
   - name: HYKU_ROOT_HOST
-    value: atla-hyku.notch8.cloud
+    value: ir-staging.atla.com
   - name: HYKU_USER_DEFAULT_PASSWORD
     value: password
   - name: NEGATIVE_CAPTCHA_SECRET
@@ -159,7 +157,7 @@ extraEnvVars: &envVars
   - name: SMTP_ADDRESS
     value: email-smtp.us-east-1.amazonaws.com
   - name: SMTP_DOMAIN
-    value: "atla-hyku.notch8.cloud"
+    value: "ir-staging.atla.com"
   - name: SMTP_ENABLED
     value: 'true'
   - name: SMTP_PASSWORD
@@ -260,4 +258,3 @@ nginx:
   enabled: false
   service:
     port: 80
-
