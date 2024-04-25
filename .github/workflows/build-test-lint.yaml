@@ -17,7 +17,7 @@ on:
 
 jobs:
   build:
-    uses: scientist-softserv/actions/.github/workflows/build.yaml@v0.0.15
+    uses: scientist-softserv/actions/.github/workflows/build.yaml@upgrade-node20-actions
     secrets: inherit
     with:
       platforms: 'linux/amd64'
@@ -26,7 +26,7 @@ jobs:
 
   test:
     needs: build
-    uses: scientist-softserv/actions/.github/workflows/test.yaml@v0.0.15
+    uses: scientist-softserv/actions/.github/workflows/test.yaml@upgrade-node20-actions
     with:
       confdir: '/app/samvera/hyrax-webapp/solr/conf'
       webTarget: hyku-web
@@ -34,7 +34,7 @@ jobs:
 
   lint:
     needs: build
-    uses: scientist-softserv/actions/.github/workflows/lint.yaml@v0.0.15
+    uses: scientist-softserv/actions/.github/workflows/lint.yaml@upgrade-node20-actions
     with:
       webTarget: hyku-web
       workerTarget: hyku-worker
