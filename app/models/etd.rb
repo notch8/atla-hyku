@@ -71,15 +71,15 @@ class Etd < ActiveFedora::Base
            end
 
   property :advisor, predicate: ::RDF::URI('https://atla.com/terms/advisor') do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :committee_member, predicate: ::RDF::URI('https://atla.com/terms/committeeMember') do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :department, predicate: ::RDF::URI('https://atla.com/terms/department') do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :year, predicate: ::RDF::Vocab::DC.date, multiple: false do |index|
