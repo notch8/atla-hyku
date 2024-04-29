@@ -34,11 +34,11 @@ module Hyrax
       types
     ]
 
-    self.terms = %i[title location alternative_title creator contributor description abstract
-                    keyword subject rights_statement publisher advisor
-                    committee_member department date_created year resource_type
+    self.terms = %i[title license location alternative_title creator contributor
+                    description abstract keyword subject rights_statement publisher
+                    advisor committee_member department date_created year resource_type
                     institution degree discipline degree_granting_institution types
-                    license language format identifier based_near access_right
+                    language format identifier based_near access_right
                     rights_notes related_url video_embed bibliographic_citation
                     additional_rights_info
                     representative_id thumbnail_id rendering_ids files
@@ -53,7 +53,7 @@ module Hyrax
     ]
 
     def primary_terms
-      super - %i[video_embed] + %i[keyword] + %i[license]
+      super - %i[video_embed] + %i[keyword]
     end
   end
 end

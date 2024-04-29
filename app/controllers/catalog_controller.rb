@@ -85,6 +85,7 @@ class CatalogController < ApplicationController
     config.add_facet_field 'degree_sim', limit: 5, label: 'Degree'
     config.add_facet_field 'discipline_sim', limit: 5, label: 'Discipline'
     config.add_facet_field 'degree_granting_institution_sim', limit: 5, label: 'Degree Granting Institution'
+    config.add_facet_field 'department_sim', limit: 5, label: 'Department'
     config.add_facet_field 'funder_name_sim', limit: 5, label: 'Funder Name'
     config.add_facet_field 'event_title_sim', limit: 5, label: 'Event Title'
     config.add_facet_field 'event_date_sim', limit: 5, label: 'Event Date'

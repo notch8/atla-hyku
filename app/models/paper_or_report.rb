@@ -31,11 +31,11 @@ class PaperOrReport < ActiveFedora::Base
   end
 
   property :format, predicate: ::RDF::Vocab::DC11.format do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :rights_holder, predicate: ::RDF::Vocab::DC.rightsHolder do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :creator_orcid, predicate: ::RDF::Vocab::SCHEMA.creator, multiple: false do |index|
@@ -44,7 +44,7 @@ class PaperOrReport < ActiveFedora::Base
 
   property :creator_institutional_relationship,
            predicate: ::RDF::URI.intern('https://atla.com/terms/creatorInstitutionalRelationship') do |index|
-             index.as :stored_searchable
+             index.as :stored_searchable, :facetable
            end
 
   property :contributor_orcid,
@@ -55,7 +55,7 @@ class PaperOrReport < ActiveFedora::Base
 
   property :contributor_institutional_relationship,
            predicate: ::RDF::URI.intern('https://atla.com/terms/contributorInstitutionalRelationship') do |index|
-             index.as :stored_searchable
+             index.as :stored_searchable, :facetable
            end
 
   property :contributor_role, predicate: ::RDF::URI('https://atla.com/terms/contributorRole') do |index|
@@ -79,11 +79,11 @@ class PaperOrReport < ActiveFedora::Base
   end
 
   property :event_location, predicate: ::RDF::URI('https://atla.com/terms/eventLocation') do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :event_date, predicate: ::RDF::URI('https://atla.com/terms/eventDate') do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
 
   property :official_link, predicate: ::RDF::Vocab::SCHEMA.url do |index|
