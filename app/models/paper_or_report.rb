@@ -95,7 +95,7 @@ class PaperOrReport < ActiveFedora::Base
   end
 
   property :location, predicate: ::RDF::Vocab::DC.coverage do |index|
-    index.as :stored_searchable, :facetable, :facetable
+    index.as :stored_searchable, :facetable
   end
 
   # types must be initially defined before the include ::Hyrax::BasicMetadata
