@@ -42,7 +42,7 @@ GIT
       rails (~> 5.1)
 
 GIT
-  remote: https://github.com/scientist-softserv/iiif_print.git
+  remote: https://github.com/notch8/iiif_print.git
   revision: 50b2659f4584ac85f468c7fcec56398f6221a412
   branch: main
   specs:

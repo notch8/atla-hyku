@@ -72,7 +72,7 @@ module Hyku
       ##
       # This needs to be in the after initialize so that the IiifPrint gem can do it's decoration.
       #
-      # @see https://github.com/scientist-softserv/iiif_print/blob/9e7837ce4bd08bf8fff9126455d0e0e2602f6018/lib/iiif_print/engine.rb#L54 Where we do the override.
+      # @see https://github.com/notch8/iiif_print/blob/9e7837ce4bd08bf8fff9126455d0e0e2602f6018/lib/iiif_print/engine.rb#L54 Where we do the override.
       Hyrax::Actors::FileSetActor.prepend(IiifPrint::TenantConfig::FileSetActorDecorator)
       Hyrax::WorkShowPresenter.prepend(IiifPrint::TenantConfig::WorkShowPresenterDecorator)
     end
